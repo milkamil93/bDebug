@@ -38,6 +38,8 @@ switch ($e->name){
 			$tend = $modx->getMicroTime();
 			$totaltime = $tend - $tstart;
 			$i=0;
+			$head = '';
+			$body = '';
 			while($row=$modx->db->GetRow($result) ){
 				if ($i==0){
 					foreach($row as $key=>$value){
